@@ -1,0 +1,710 @@
+{
+  "slide_layouts": [
+    {
+      "index": 0,
+      "name": "Title Slide",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "SUBTITLE",
+          "type_id": 3,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 7772400,
+          "height": 1470025,
+          "left": 685800,
+          "top": 2130425
+        },
+        {
+          "idx": 1,
+          "type": "TEXT",
+          "type_id": 4,
+          "name": "Subtitle 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 6400800,
+          "height": 1752600,
+          "left": 1371600,
+          "top": 3886200
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Title and Content",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 1143000,
+          "left": 457200,
+          "top": 274638
+        },
+        {
+          "idx": 1,
+          "type": "TABLE",
+          "type_id": 7,
+          "name": "Content Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 4525963,
+          "left": 457200,
+          "top": 1600200
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Section Header",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 7772400,
+          "height": 1362075,
+          "left": 722313,
+          "top": 4406900
+        },
+        {
+          "idx": 1,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Text Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 7772400,
+          "height": 1500187,
+          "left": 722313,
+          "top": 2906713
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Two Content",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 1143000,
+          "left": 457200,
+          "top": 274638
+        },
+        {
+          "idx": 1,
+          "type": "TABLE",
+          "type_id": 7,
+          "name": "Content Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 4038600,
+          "height": 4525963,
+          "left": 457200,
+          "top": 1600200
+        },
+        {
+          "idx": 2,
+          "type": "TABLE",
+          "type_id": 7,
+          "name": "Content Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 4038600,
+          "height": 4525963,
+          "left": 4648200,
+          "top": 1600200
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 6",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Comparison",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 1143000,
+          "left": 457200,
+          "top": 274638
+        },
+        {
+          "idx": 1,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Text Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 4040188,
+          "height": 639762,
+          "left": 457200,
+          "top": 1535113
+        },
+        {
+          "idx": 2,
+          "type": "TABLE",
+          "type_id": 7,
+          "name": "Content Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 4040188,
+          "height": 3951288,
+          "left": 457200,
+          "top": 2174875
+        },
+        {
+          "idx": 3,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Text Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 4041775,
+          "height": 639762,
+          "left": 4645025,
+          "top": 1535113
+        },
+        {
+          "idx": 4,
+          "type": "TABLE",
+          "type_id": 7,
+          "name": "Content Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 4041775,
+          "height": 3951288,
+          "left": 4645025,
+          "top": 2174875
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 6",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 7",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 8",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Title Only",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 1143000,
+          "left": 457200,
+          "top": 274638
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Blank",
+      "placeholders": [
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Content with Caption",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 3008313,
+          "height": 1162050,
+          "left": 457200,
+          "top": 273050
+        },
+        {
+          "idx": 1,
+          "type": "TABLE",
+          "type_id": 7,
+          "name": "Content Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 5111750,
+          "height": 5853113,
+          "left": 3575050,
+          "top": 273050
+        },
+        {
+          "idx": 2,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Text Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 3008313,
+          "height": 4691063,
+          "left": 457200,
+          "top": 1435100
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 6",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Picture with Caption",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 5486400,
+          "height": 566738,
+          "left": 1792288,
+          "top": 4800600
+        },
+        {
+          "idx": 1,
+          "type": "UNKNOWN_PICTURE (18)",
+          "type_id": 18,
+          "name": "Picture Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 5486400,
+          "height": 4114800,
+          "left": 1792288,
+          "top": 612775
+        },
+        {
+          "idx": 2,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Text Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 5486400,
+          "height": 804862,
+          "left": 1792288,
+          "top": 5367338
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 6",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Title and Vertical Text",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 1143000,
+          "left": 457200,
+          "top": 274638
+        },
+        {
+          "idx": 1,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Vertical Text Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 8229600,
+          "height": 4525963,
+          "left": 457200,
+          "top": 1600200
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Vertical Title and Text",
+      "placeholders": [
+        {
+          "idx": 0,
+          "type": "BODY",
+          "type_id": 1,
+          "name": "Vertical Title 1",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2057400,
+          "height": 5851525,
+          "left": 6629400,
+          "top": 274638
+        },
+        {
+          "idx": 1,
+          "type": "CENTER_TITLE",
+          "type_id": 2,
+          "name": "Vertical Text Placeholder 2",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 6019800,
+          "height": 5851525,
+          "left": 457200,
+          "top": 274638
+        },
+        {
+          "idx": 10,
+          "type": "UNKNOWN_DATE (16)",
+          "type_id": 16,
+          "name": "Date Placeholder 3",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 457200,
+          "top": 6356350
+        },
+        {
+          "idx": 11,
+          "type": "UNKNOWN_FOOTER (15)",
+          "type_id": 15,
+          "name": "Footer Placeholder 4",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2895600,
+          "height": 365125,
+          "left": 3124200,
+          "top": 6356350
+        },
+        {
+          "idx": 12,
+          "type": "OBJECT",
+          "type_id": 13,
+          "name": "Slide Number Placeholder 5",
+          "shape_type": "PLACEHOLDER (14)",
+          "width": 2133600,
+          "height": 365125,
+          "left": 6553200,
+          "top": 6356350
+        }
+      ]
+    }
+  ],
+  "slide_width": 18288000,
+  "slide_height": 10287000
+}
