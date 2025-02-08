@@ -1,7 +1,11 @@
-python-pptx==0.6.22
 google-generativeai==0.3.2
-python-dotenv==1.0.1
-tqdm==4.66.1
-Pillow==9.5.0
-requests==2.31.0
-jsonschema==4.21.1
+python-dotenv==1.0.0
+matplotlib==3.7.1
+seaborn==0.12.2
+pillow==9.5.0
+python-pptx==0.6.22
+numpy==1.23.5
+pandas==1.5.3
+tqdm==4.65.0
+protobuf==3.20.3
+google-auth-oauthlib==0.4.6

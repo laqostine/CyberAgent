@@ -5,7 +5,7 @@ from datetime import datetime
 from typing import Optional
 from dotenv import load_dotenv
 from gemini_content_generator import GeminiContentGenerator
-from deneme import SlideGenerator
+from slide_generator import EnhancedSlideGenerator
 import time
 from tqdm import tqdm
 import re
@@ -34,10 +34,26 @@ class PresentationManager:
         
     def _find_template(self) -> str:
         """Find the template file and validate it exists"""
-        template_path = "template.pptx"
-        if not os.path.exists(template_path):
-            raise FileNotFoundError(f"Template file '{template_path}' not found. Please ensure it exists in the current directory.")
-        return template_path
+        template_paths = [
+            "template.pptx",
+            "Template-for-training-material.pptx",
+            "templates/template.pptx"
+        ]
+        
+        for path in template_paths:
+            if os.path.exists(path):
+                logger.info(f"Found template file: {path}")
+                return path
+                
+        # If no template found, copy the default template
+        default_template = "Template-for-training-material.pptx"
+        if os.path.exists(default_template):
+            template_path = "template.pptx"
+            shutil.copy2(default_template, template_path)
+            logger.info(f"Copied default template to: {template_path}")
+            return template_path
+            
+        raise FileNotFoundError("No template file found. Please ensure 'template.pptx' or 'Template-for-training-material.pptx' exists in the current directory.")
 
     def _create_output_directory(self):
         """Create output directories if they don't exist"""
@@ -101,7 +117,7 @@ class PresentationManager:
                 
                 # Initialize slide generator
                 pbar.set_description("Initializing slide generator")
-                slide_generator = SlideGenerator(self.template_path)
+                slide_generator = EnhancedSlideGenerator(self.template_path)
                 pbar.update(1)
                 
                 # Generate slides
@@ -129,72 +145,62 @@ def display_menu() -> None:
     """Display the main menu"""
     clear_screen()
     print("\n=== CyberAgent Slide Generator ===")
-    print("\nAvailable Modules:")
-    print("1. Data Collection")
-    print("2. Data Cleaning")
-    print("3. Data Analysis")
-    print("4. Data Visualization")
-    print("5. Applications")
-    print("6. Exit")
+    print("\nComprehensive Cybersecurity Data Analytics Course")
+    print("\nOptions:")
+    print("1. Generate Complete Presentation (60 slides)")
+    print("2. View Presentation Structure")
+    print("3. Help")
+    print("4. Exit")
     print("\nType 'help' for more information or 'exit' to quit")
+
+def display_structure():
+    """Display the presentation structure"""
+    clear_screen()
+    print("\n=== Presentation Structure ===")
+    print("\nTitle: Comprehensive Data Analytics in Cybersecurity")
+    print("\nSections:")
+    print("1. Introduction and Fundamentals (9 slides)")
+    print("   - Course Overview")
+    print("   - Basic Concepts")
+    print("   - Industry Context")
+    print("\n2. Data Collection and SIEM (12 slides)")
+    print("   - Data Sources")
+    print("   - SIEM Systems")
+    print("   - Collection Methods")
+    print("\n3. Data Cleaning and Preprocessing (12 slides)")
+    print("   - Cleaning Techniques")
+    print("   - Data Quality")
+    print("   - Preprocessing Steps")
+    print("\n4. Data Analysis and Detection (12 slides)")
+    print("   - Analysis Methods")
+    print("   - Threat Detection")
+    print("   - Pattern Recognition")
+    print("\n5. Visualization and Reporting (10 slides)")
+    print("   - Visualization Tools")
+    print("   - Dashboard Design")
+    print("   - Reporting Best Practices")
+    print("\n6. Practical Applications (5 slides)")
+    print("   - Case Studies")
+    print("   - Real-world Examples")
+    print("   - Future Trends")
+    input("\nPress Enter to return to the main menu...")
 
 def display_help():
     """Display help information"""
     clear_screen()
     print("\n=== Help Information ===")
-    print("\nThis application generates PowerPoint presentations for the CyberAgent cybersecurity curriculum.")
-    print("\nInstructions:")
-    print("1. Select a module number (1-5)")
-    print("2. Choose a lesson from the available options")
-    print("3. Wait for the presentation to generate")
-    print("4. Find your presentation in the current directory")
+    print("\nThis application generates a comprehensive 60-slide PowerPoint presentation")
+    print("covering the complete Cybersecurity Data Analytics curriculum.")
+    print("\nPresentation Features:")
+    print("- Complete coverage of all major topics")
+    print("- Interactive exercises and practical examples")
+    print("- Real-world case studies")
+    print("- Assessment questions")
     print("\nNotes:")
-    print("- Backups are automatically created before generating new presentations")
+    print("- Backups are automatically created")
     print("- Check 'slide_generator.log' for detailed information")
-    print("- The template file 'template.pptx' must be present in the current directory")
+    print("- Requires 'template.pptx' in the current directory")
     input("\nPress Enter to return to the main menu...")
-
-def get_module_info(choice: int) -> tuple:
-    """Get module and lesson information based on menu choice"""
-    module_map = {
-        1: ("data_collection", [
-            "Introduction to Data Sources",
-            "SIEM Systems",
-            "Practical Data Collection"
-        ]),
-        2: ("data_cleaning", [
-            "Importance of Data Cleaning",
-            "Data Cleaning Techniques",
-            "Python and Pandas Demo"
-        ]),
-        3: ("data_analysis", [
-            "Analysis Techniques",
-            "Exploratory Data Analysis",
-            "Threat Detection Examples"
-        ]),
-        4: ("data_visualization", [
-            "Visualization Basics",
-            "Tools and Libraries",
-            "Security Metrics Visualization"
-        ]),
-        5: ("applications", [
-            "Case Studies",
-            "SME Anomaly Detection",
-            "Course Summary"
-        ])
-    }
-    
-    if choice not in module_map:
-        return None, []
-    
-    return module_map[choice]
-
-def display_lessons(lessons: list) -> None:
-    """Display available lessons for selected module"""
-    print("\nAvailable Lessons:")
-    for i, lesson in enumerate(lessons, 1):
-        print(f"{i}. {lesson}")
-    print(f"{len(lessons) + 1}. Back to main menu")
 
 def main():
     try:
@@ -202,71 +208,38 @@ def main():
         
         while True:
             display_menu()
-            choice = input("\nEnter your choice (1-6 or 'help'): ").lower()
+            choice = input("\nEnter your choice (1-4): ").lower()
             
-            if choice == 'help':
+            if choice == '3' or choice == 'help':
                 display_help()
                 continue
                 
-            if choice in ['6', 'exit', 'quit']:
+            if choice in ['4', 'exit', 'quit']:
                 logger.info("Exiting program")
                 print("\nThank you for using CyberAgent Slide Generator!")
                 break
             
-            try:
-                choice = int(choice)
-                if choice < 1 or choice > 5:
-                    logger.warning("Invalid choice selected")
-                    print("Please enter a valid choice (1-6)")
-                    time.sleep(2)
-                    continue
+            if choice == '2':
+                display_structure()
+                continue
+            
+            if choice == '1':
+                print("\nGenerating comprehensive presentation...")
+                output_path = presentation_manager.generate_presentation(
+                    "comprehensive",
+                    "Comprehensive Data Analytics in Cybersecurity"
+                )
                 
-                module, lessons = get_module_info(choice)
-                if not module:
-                    logger.error("Invalid module selected")
-                    continue
+                if output_path:
+                    print(f"\nPresentation generated successfully!")
+                    print(f"File saved as: {output_path}")
+                    print("\nA backup of any previous presentation was created automatically.")
+                else:
+                    print("\nError generating presentation. Check the logs for details.")
                 
-                while True:
-                    clear_screen()
-                    display_lessons(lessons)
-                    try:
-                        lesson_choice = input(f"\nSelect a lesson (1-{len(lessons) + 1}): ")
-                        
-                        if lesson_choice.lower() in ['b', 'back']:
-                            break
-                            
-                        lesson_choice = int(lesson_choice)
-                        if lesson_choice == len(lessons) + 1:
-                            break
-                        
-                        if lesson_choice < 1 or lesson_choice > len(lessons):
-                            logger.warning("Invalid lesson choice selected")
-                            print(f"Please enter a valid choice (1-{len(lessons) + 1})")
-                            time.sleep(2)
-                            continue
-                        
-                        lesson_title = lessons[lesson_choice - 1]
-                        logger.info(f"Selected module: {module}, lesson: {lesson_title}")
-                        
-                        output_path = presentation_manager.generate_presentation(module, lesson_title)
-                        if output_path:
-                            print(f"\nPresentation generated successfully!")
-                            print(f"File saved as: {output_path}")
-                            print("\nA backup of any previous presentation was created automatically.")
-                        else:
-                            print("\nError generating presentation. Check the logs for details.")
-                        
-                        input("\nPress Enter to continue...")
-                        break
-                        
-                    except ValueError:
-                        logger.warning("Invalid input for lesson choice")
-                        print("Please enter a valid number")
-                        time.sleep(2)
-                
-            except ValueError:
-                logger.warning("Invalid input for main menu choice")
-                print("Please enter a valid number")
+                input("\nPress Enter to continue...")
+            else:
+                print("Please enter a valid choice (1-4)")
                 time.sleep(2)
                 
     except Exception as e:
